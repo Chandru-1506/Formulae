@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Tagesschrift&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Tagesschrift&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #eae7ff;
+  --card: #f6f1e7;
+  --text: #222;
+  --primary: #1976d2;
+  --border: #ccc;
+}
+
+.app.dark {
+  --bg: #121212;
+  --card: #1e1e1e;
+  --text: #f5f5f5;
+  --primary: #90caf9;
+  --border: #333;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg);
+  padding: 10px;
+}
+
+.card {
+  width: 100%;
+  max-width: 360px;
+  background: var(--card);
+  padding: 16px;
+  border-radius: 12px;
+  color: var(--text);
+}
+
+.topline {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 5px;
+  line-height: 30px;
+}
+
+.title {
+  font-weight: 900;
+}
+
+.theme,
+.lang_conv {
+  font-size: 28px;
+  border: none;
+  background: var(--card);
+  color: var(--text);
+}
+
+label {
+  margin: 5px 5px 10px 0px;
+  color: var(--text);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.field select,
+input {
+  padding: 8px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+.result {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 50px;
+}
